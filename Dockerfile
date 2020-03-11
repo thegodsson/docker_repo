@@ -1,3 +1,3 @@
 From nginx:latest
 RUN sed -i 's/nginx/david/g' /usr/share/nginx/html/index.html
-EXPOSE 8081:80
+#EXPOSE 8081:80
