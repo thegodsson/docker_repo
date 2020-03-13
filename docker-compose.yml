@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: mynginx
+    volumes:
+            - /var/lib/jenkins/ANSIBLE/ansible_1/save_nginx/html:/usr/share/nginx/html
+            - /var/lib/jenkins/ANSIBLE/ansible_1/save_nginx/conf:/etc/nginx/conf.d
+
+    ports:
+      - 8083:80
